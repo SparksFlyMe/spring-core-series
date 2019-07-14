@@ -11,6 +11,7 @@
     <modules>
         <module>component-registration</module>
         <module>common</module>
+        <module>life-cycle</module>
     </modules>
 
     <dependencies>
