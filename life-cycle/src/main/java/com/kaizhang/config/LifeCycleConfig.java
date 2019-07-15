@@ -1,6 +1,7 @@
 package com.kaizhang.config;
 
 import com.kaizhang.bean.Car;
+import com.kaizhang.bean.Cat;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -25,15 +26,22 @@ import org.springframework.context.annotation.Configuration;
  *      多实例：容器不会管理这个bean，容器不会调用销毁方法
  *
  *
- * 1）、指定初始化和销毁方法：
+ * 1）、指定初始化和销毁方法：{@link Car}
  *          通过指定init-method 和 destroy-method
- * 2）、通过让bean实现InitializingBean(定义初始化逻辑)，DisposableBean(定义销毁逻辑)
+ * 2）、通过让bean实现InitializingBean(定义初始化逻辑)，DisposableBean(定义销毁逻辑){@link Cat}
+ * 3）、可以使用JSR250
+ *      @PostConstruct： 在bean创建完成并且属性赋值完成；来执行初始化方法。
+ *      @PreDestroy： 在容器销毁bean之前通知我们进行清理工作
  */
 
-@ComponentScan("com.kaizhang.bean")
+@ComponentScan("com.kaizhang.bean") //扫描com.kaizhang.bean包下所有对象
 @Configuration
 public class LifeCycleConfig {
 
+    /**
+     * 指定初始化和销毁方法，通过指定init-method 和 destroy-method {@link Car}
+     * @return
+     */
     @Bean(initMethod = "init", destroyMethod = "destroy")
     public Car getCar() {
         return new Car();
