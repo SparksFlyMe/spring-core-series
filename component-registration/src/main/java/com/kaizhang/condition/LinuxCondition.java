@@ -16,7 +16,6 @@ public class LinuxCondition implements Condition {
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
         Environment environment = context.getEnvironment();
         String property = environment.getProperty("os.name");
-        System.out.println(property);
         return StringUtils.isNotEmpty(property) && property.contains("linux");
     }
 }
