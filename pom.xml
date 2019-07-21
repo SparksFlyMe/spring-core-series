@@ -12,6 +12,7 @@
         <module>component-registration</module>
         <module>common</module>
         <module>life-cycle</module>
+        <module>autowired</module>
     </modules>
 
     <properties>

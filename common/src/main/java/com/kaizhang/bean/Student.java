@@ -1,10 +1,13 @@
 package com.kaizhang.bean;
 
+import org.springframework.stereotype.Component;
+
 /**
  * @author ：kaizhang
  * @date ：2019/7/10 23:46
  * @description：学生测试类
  */
+@Component
 public class Student {
     /**
      * 姓名
