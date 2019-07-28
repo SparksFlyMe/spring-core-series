@@ -15,8 +15,8 @@ import org.springframework.context.annotation.Import;
 public class ImportConfig {
 
 
-    @Bean
+    /*@Bean
     public MyFactoryBean myFactoryBean(){
         return new MyFactoryBean();
-    }
+    }*/
 }

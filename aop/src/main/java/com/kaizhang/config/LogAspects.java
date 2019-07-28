@@ -17,17 +17,17 @@ public class LogAspects {
      * 1、本类引用：直接用方法名，比如pointCut()
      * 2、其他的切面引用：写入应用类的全名：com.kaizhang.config.LogAspects.pointCut()
      */
-    @Pointcut("execution(public int com.kaizhang.controller.MathCalculator.*(..))")
+    @Pointcut("execution(public int com.kaizhang.demo.MathCalculator.*(..))")
     public void pointCut() {
 
     }
 
 
     /**
-     * @Before在目标方法之前切入，切入点表达式（指定在哪个方法切入） 如果 @Before("execution(public int com.kaizhang.controller.MathCalculator..*(..))")表示切这个类的所有方法
+     * @Before在目标方法之前切入，切入点表达式（指定在哪个方法切入） 如果 @Before("execution(public int com.kaizhang.demo.MathCalculator..*(..))")表示切这个类的所有方法
      */
-//    @Before("execution(public int com.kaizhang.controller.MathCalculator.div(int, int))")
-    @Before(value = "execution(public int com.kaizhang.controller.MathCalculator..*(..))")
+//    @Before("execution(public int com.kaizhang.demo.MathCalculator.div(int, int))")
+    @Before(value = "execution(public int com.kaizhang.demo.MathCalculator..*(..))")
     public void logStart(JoinPoint joinPoint) {
         Object[] args = joinPoint.getArgs();
         System.out.println("" + joinPoint.getSignature().getName() + "运行。。。@Before参数列表是：{" + Arrays.asList(args) + "}");

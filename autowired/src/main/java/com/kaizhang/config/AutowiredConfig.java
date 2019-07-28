@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
 
 /**
  * @author ：kaizhang
@@ -41,7 +40,6 @@ import org.springframework.context.annotation.Profile;
  */
 @Configuration
 @ComponentScan({"com.kaizhang.service", "com.kaizhang.dao", "com.kaizhang.bean"})
-@Profile("dev")
 public class AutowiredConfig {
 
     @Bean("bookDao2")

@@ -1,4 +1,4 @@
-package com.kaizhang.controller;
+package com.kaizhang.demo;
 
 import com.kaizhang.config.AopConfig;
 import org.junit.Test;
