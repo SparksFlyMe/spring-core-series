@@ -1,4 +1,4 @@
-package com.kaizhang.config;
+package com.kaizhang;
 
 
 import org.springframework.beans.BeansException;

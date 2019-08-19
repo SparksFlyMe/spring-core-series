@@ -1,4 +1,4 @@
-package com.kaizhang.config;
+package com.kaizhang;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -15,7 +15,7 @@ public class LogAspects {
     /**
      * 抽取公共的切入点表达式
      * 1、本类引用：直接用方法名，比如pointCut()
-     * 2、其他的切面引用：写入应用类的全名：com.kaizhang.config.LogAspects.pointCut()
+     * 2、其他的切面引用：写入应用类的全名：LogAspects.pointCut()
      */
     @Pointcut("execution(public int com.kaizhang.demo.MathCalculator.*(..))")
     public void pointCut() {
@@ -39,7 +39,7 @@ public class LogAspects {
     }
 
     // 注意，JoinPoint如果要写，必须出现在参数的第一位
-    @AfterReturning(value = "com.kaizhang.config.LogAspects.pointCut()", returning = "result")// 引入其他类的公共切入点表达式
+    @AfterReturning(value = "com.kaizhang.LogAspects.pointCut()", returning = "result")// 引入其他类的公共切入点表达式
     public void logReturn(JoinPoint joinPoint, Object result) {
         System.out.println("" + joinPoint.getSignature().getName() + "正常返回。。。@AfterReturning运行结果：{" + result + "}");
     }

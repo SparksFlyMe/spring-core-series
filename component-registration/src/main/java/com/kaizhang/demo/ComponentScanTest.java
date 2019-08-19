@@ -1,6 +1,6 @@
 package com.kaizhang.demo;
 
-import com.kaizhang.config.ComponentScanConfig;
+import com.kaizhang.ComponentScanConfig;
 
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

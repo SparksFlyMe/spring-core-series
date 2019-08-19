@@ -1,4 +1,4 @@
-package com.kaizhang.config;
+package com.kaizhang;
 
 import com.kaizhang.bean.Person;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;

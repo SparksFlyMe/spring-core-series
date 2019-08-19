@@ -1,7 +1,6 @@
-package com.kaizhang.config;
+package com.kaizhang;
 
 import com.kaizhang.bean.Person;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 

@@ -1,4 +1,4 @@
-package com.kaizhang.config;
+package com.kaizhang;
 
 import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.type.AnnotationMetadata;

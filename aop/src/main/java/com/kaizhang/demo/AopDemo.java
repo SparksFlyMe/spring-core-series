@@ -1,6 +1,6 @@
 package com.kaizhang.demo;
 
-import com.kaizhang.config.AopConfig;
+import com.kaizhang.AopConfig;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

@@ -1,4 +1,4 @@
-package com.kaizhang.config;
+package com.kaizhang;
 
 import com.kaizhang.demo.ComponentScanTest;
 import org.springframework.context.annotation.ComponentScan;

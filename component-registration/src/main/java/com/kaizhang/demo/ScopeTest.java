@@ -2,7 +2,7 @@ package com.kaizhang.demo;
 
 import com.kaizhang.bean.Person;
 import com.kaizhang.bean.Student;
-import com.kaizhang.config.ScopeConfig;
+import com.kaizhang.ScopeConfig;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

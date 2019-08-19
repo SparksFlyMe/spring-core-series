@@ -1,6 +1,6 @@
 package com.kaizhang.demo;
 
-import com.kaizhang.config.LifeCycleConfig;
+import com.kaizhang.LifeCycleConfig;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

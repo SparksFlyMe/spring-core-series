@@ -1,7 +1,7 @@
 package com.kaizhang.demo;
 
 import com.kaizhang.bean.PersonWithPropertyValue;
-import com.kaizhang.config.PropertyPutValueConfig;
+import com.kaizhang.PropertyPutValueConfig;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import utils.ApplicationContextUtils;

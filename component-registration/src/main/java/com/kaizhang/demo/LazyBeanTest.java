@@ -2,11 +2,9 @@ package com.kaizhang.demo;
 
 import com.kaizhang.bean.Person;
 import com.kaizhang.bean.Student;
-import com.kaizhang.config.LazyBeanConfig;
-import com.kaizhang.config.ScopeConfig;
+import com.kaizhang.LazyBeanConfig;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Lazy;
 
 /**
  * @author ：kaizhang

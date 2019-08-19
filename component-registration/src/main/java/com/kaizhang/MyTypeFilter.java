@@ -1,4 +1,4 @@
-package com.kaizhang.config;
+package com.kaizhang;
 
 import org.springframework.core.io.Resource;
 import org.springframework.core.type.AnnotationMetadata;
@@ -12,7 +12,7 @@ import java.io.IOException;
 /**
  * @author ：kaizhang
  * @date ：2019/7/8 23:11
- * @description： 自定义TypeFilter，用在{@link com.kaizhang.config.ComponentScanConfig}
+ * @description： 自定义TypeFilter，用在{@link com.kaizhang.ComponentScanConfig}
  */
 
 

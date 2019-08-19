@@ -1,4 +1,4 @@
-package com.kaizhang.config;
+package com.kaizhang;
 
 import com.kaizhang.bean.Student;
 import org.springframework.beans.factory.FactoryBean;

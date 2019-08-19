@@ -1,4 +1,4 @@
-package com.kaizhang.config;
+package com.kaizhang;
 
 import com.kaizhang.dao.BookDao;
 import com.kaizhang.service.BookService;

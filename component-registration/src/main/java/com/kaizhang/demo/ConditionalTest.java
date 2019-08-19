@@ -1,7 +1,7 @@
 package com.kaizhang.demo;
 
 import com.kaizhang.bean.Person;
-import com.kaizhang.config.ConditionalConfig;
+import com.kaizhang.ConditionalConfig;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
